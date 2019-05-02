@@ -1,12 +1,15 @@
 package com;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.io.Serializable;
 import java.util.List;
 
-public class Route {
+public class Route implements Serializable{
     String id;
     List steps;
 
-    public Route() {
+    public Route(){
     }
 
     public Route(String id, List steps) {

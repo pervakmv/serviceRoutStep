@@ -1,13 +1,17 @@
 package com;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.io.Serializable;
 import java.util.Map;
 
-public class Step {
+public class Step implements Serializable {
     Long id;
     Service serviceFrom;
     Service serviceTo;
     Map paramsServiceFrom;
     Map paramsServiceTo;
+
 
     public Step() {
     }
@@ -58,5 +62,16 @@ public class Step {
 
     public void setParamsServiceTo(Map paramsServiceTo) {
         this.paramsServiceTo = paramsServiceTo;
+    }
+
+    @Override
+    public String toString() {
+        return "Step{" +
+                "id=" + id +
+                ", serviceFrom=" + serviceFrom +
+                ", serviceTo=" + serviceTo +
+                ", paramsServiceFrom=" + paramsServiceFrom +
+                ", paramsServiceTo=" + paramsServiceTo +
+                '}';
     }
 }

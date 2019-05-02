@@ -1,11 +1,15 @@
 package com;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.io.Serializable;
 import java.util.List;
 
-public class Service {
+public class Service implements Serializable {
     long id;
     String name;
+
     List paramsToCall;
 
     public Service() {

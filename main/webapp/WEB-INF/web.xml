@@ -16,16 +16,4 @@
         <param-value>/WEB-INF/spring-servlet.xml</param-value>
     </init-param>
 
-    <!--
-    <context-param>
-        <param-name>contextCoonfigLocation</param-name>
-        <param-value>/WEB_INF/spring-servlet.xml</param-value>
-    </context-param>
-
-    <listener>
-        <listener-class>
-            org.springframework.web.context.ContextLoaderListener
-        </listener-class>
-    </listener>
-    -->
 </web-app>
